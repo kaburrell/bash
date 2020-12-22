@@ -18,6 +18,13 @@ DOW_NUM=$(date +%u)
 DOW_TXT=$(date +"%a")
 # echo $DOW_TXT
 
+function today()
+{
+  # today as mm-dd-yy
+  echo $(date +"%m-%d-%y")  
+}
+
+
 function is_weekend()
 {
   local _dow
