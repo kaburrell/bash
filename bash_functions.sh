@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Exloring Bash functions with short code examples
 # 12/18/20  Updated
 # 12/09/20  Created
 
@@ -16,11 +17,11 @@ function foo()
     echo "foo() - SUCCESS"
 }
 
-# call a function 2 ways, don't call with parens
-#  directly
+# call a function 2 ways
+#  foo call directly, name only, no parens e.g. foo() 
 #  $(function) or `function`
 
-# writes to stdout
+# foo writes to stdout
 foo
 
 # capture stdout in a varaible
@@ -32,6 +33,7 @@ echo "$msg"
 # each passed parameter gets assigned $1 .. $9
 function foo_with_args()
 {
+    echo "$0"
     echo "${FUNCNAME[0]}"
     echo "$1"
     echo "$2"
@@ -43,8 +45,8 @@ foo_with_args "Hello" "World"
 # what can bash functions do
 #   execute a sequence of commands
 #   write text to stdout
-#   return a string .. capture stdout with $(function) 
-#   return it's status code
+#   return a string .. if capture stdout with $(function) 
+#   return a status code
 
 # bash functions CAN'T return numeric values, like 10356
 

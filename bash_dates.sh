@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# working with dates, and unix date command
 # 12/18/20  Updated
 # 12/09/20  Created
 
