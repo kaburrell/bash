@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "$0"
 
+# load library code
 source ./bash_autosys.sh
+
+
